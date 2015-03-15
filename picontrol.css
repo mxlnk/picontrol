@@ -1,5 +1,6 @@
 body {
-  padding-top: 50px;
+  padding-top: 150px;
+  background-color: lightgrey ;
 }
 
 .vertical-center {}
@@ -34,6 +35,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
 }
 
 
