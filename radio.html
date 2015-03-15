@@ -7,14 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" href="../resources/RaspberryPi_Logo.png">
+    <link rel="icon" href="resources/RaspberryPi_Logo.png">
     <title>πControl</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-	<link href="../picontrol.css" rel="stylesheet">
+	<link href="picontrol.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,52 +41,26 @@
           <ul class="nav navbar-nav">
             <li><a href="power.html">Power</a></li>
             <li><a href="music.html">Music</a></li>
-            <li><a href="radio.html">Radio</a></li>
-            <li class="active"><a href="#">Alarms</a></li>
+            <li class="active"><a href="#">Radio</a></li>
+            <li><a href="alarms.html">Alarms</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container vertical-center">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2 class="panel-title">configure an alarm</h2>
+          <h2 class="panel-title">play a radiochannel</h2>
         </div>
         <div class="panel-body">
-            <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-              <span class="input-group-addon">
-                    <input type="checkbox">
-                </span>
-                <input type="text" class="form-control" placeholder="7:00">
-              </div><!-- /input-group -->
-             </div><!-- /.col-lg-6 -->
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox">
-                </span>
-                <input type="text" class="form-control" placeholder="8:00">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox">
-                </span>
-                <input type="text" class="form-control" placeholder="9:00">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div>
+          <div class="btn-group btn-group-xlg" role="group" aria-label="...">
+              <button type="button" class="btn btn-default radioBtnGroup" id="radioButton1" onclick="turnEleOnGroupOff('radioButton1','radioBtnGroup')"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Channel1</button>
+              <button type="button" class="btn btn-default radioBtnGroup" id="radioButton2" onclick="turnEleOnGroupOff('radioButton2','radioBtnGroup')"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Channel2</button>
+              <button type="button" class="btn btn-default radioBtnGroup" id="radioButton3" onclick="turnEleOnGroupOff('radioButton3','radioBtnGroup')"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Channel3</button>
+              <button type="button" class="btn btn-default radioBtnGroup" id="radioButton4" onclick="turnEleOnGroupOff('radioButton4','radioBtnGroup')"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Channel4</button>
+            </div>
         </div>
       </div>
     </div><!-- /.container -->
@@ -96,7 +70,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../piControl.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="piControl.js"></script>
   </body>
 </html>
