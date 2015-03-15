@@ -2,11 +2,10 @@ body {
   padding-top: 50px;
 }
 
-.vertical-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.vertical-center {}
+
+.mylabel {
+  margin-left: 20px;
 }
 
 .btn-xlg,
@@ -28,8 +27,13 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .centralice{}
+@media all and (min-width: 768px) {
+  .vertical-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 
